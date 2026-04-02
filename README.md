@@ -1,4 +1,6 @@
-# Norry QR Generator 📱✨
+# Norry QR Studio 📱✨
+
+**Live Demo:** [https://qr-studio-eqqa.onrender.com](https://qr-studio-eqqa.onrender.com)
 
 A sophisticated, beautifully designed, completely client-side QR Code generator. Built specifically with an elegant UI, featuring a dynamic glowing glassmorphism aesthetic and a premium user experience. 
 
