@@ -1,36 +1,33 @@
-# Norry QR Studio 📱✨
+# Norry QR Studio
 
-**Live Demo:** [https://qr-studio-eqqa.onrender.com](https://qr-studio-eqqa.onrender.com)
+**Live Environment:** [qr-studio-eqqa.onrender.com](https://qr-studio-eqqa.onrender.com)
 
-A sophisticated, beautifully designed, completely client-side QR Code generator. Built specifically with an elegant UI, featuring a dynamic glowing glassmorphism aesthetic and a premium user experience. 
+Norry QR Studio is a dedicated client-side utility for generating high-fidelity QR codes. Engineered to prioritize data privacy and execution speed, the application performs all encoding and image rendering within the user's browser environment, completely bypassing the need for external processing or server interactions.
 
-## ✨ Features
+## System Capabilities
 
-- **Blazing Fast API-free Generation:** Leverages `qrcode.js` to render QR codes purely in the browser. Zero reliance on external backend servers.
-- **Glassmorphism Aesthetic:** A stunning UI consisting of dynamic animated desktop & mobile-optimized glowing oceanic orbs against a deep dark background.
-- **URL & Text Mode:** Quickly translate any standard web URLs or plain text blobs into a responsive QR code.
-- **Wi-Fi Network Mode:** Instantly generate specialized QR codes that authenticate devices into your home or office Wi-Fi network without typing a password. Displays your security keys elegantly on the printed design!
-- **Download Ready:** Generates high-resolution PNGs tailored to user-specified sizes (160px – 320px) ready for 1-click download.
-- **Adjustable Error Correction:** Customize QR density (L, M, Q, H) to optimize how easy it is to scan at varying screen sizes.
-- **Mobile Optimized:** Completely responsive and beautifully translates the glass UI to portrait orientation devices.
+* **Local Generation:** Utilizes `qrcode.js` for immediate in-browser rendering. This architecture guarantees data privacy by preventing any transmission of user input to external services.
+* **Multi-Format Support:** Accommodates standard text strings, web URLs, and specialized Wi-Fi credential encoding for automated network authentication.
+* **Configurable Density and Scaling:** Provides granular control over error correction levels (L, M, Q, H) and output dimensions (160px to 320px), ensuring reliable scannability across diverse print and digital mediums.
+* **Direct Asset Export:** Facilitates immediate download of generated QR codes as high-resolution PNG files.
+* **Responsive Architecture:** Features a fluid interface constructed with modern CSS properties, guaranteeing a consistent user experience across desktop, tablet, and mobile form factors.
 
-## 🚀 Usage
+## Technical Foundation
 
-Since the app doesn't require a backend, you can literally run it locally:
+* **Presentation Layer:** HTML5 and Vanilla CSS, leveraging native keyframe animations and custom properties without reliance on CSS frameworks.
+* **Application Logic:** Vanilla JavaScript for state management and DOM manipulation, maintaining a minimal execution footprint.
+* **Rendering Subsystems:** `qrcode.js` handles matrix generation, while WebGL powers the ambient background shaders.
 
-1. Clone or download the repository to your machine.
-2. Double-click the `norry_qr_generator.html` file to open it in any modern browser.
-3. Select your QR type (Text/URL vs. Wi-Fi).
-4. Enter your details and press **Generate**. 
-5. Download and share!
+## Local Deployment
 
-## 🛠️ Technology Stack
+As a fully static application, Norry QR Studio requires no build pipeline or server-side runtime.
 
-- **HTML5 & Vanilla CSS:** No frontend frameworks. Pure CSS utilizing `backdrop-filter`, CSS Variables, and native `@keyframes` animations.
-- **Vanilla JavaScript:** Simple, lightweight script managing the UI state and generation logic.
-- **WebGL:** Ambient shader functionality integrated directly into the visual layout (embedded seamlessly into the design).
-- **qrcode.js:** A robust cross-browser QR rendering library.
+1. Clone the repository to the local filesystem.
+2. Initialize a local development server or open `norry_qr_generator.html` directly in a modern web browser.
+3. Select the desired encoding format via the user interface.
+4. Input the necessary parameters and initiate generation.
+5. Adjust dimensions as required and export the generated PNG asset.
 
-## 📄 License
+## License
 
-This project is open-source and available under the [MIT License](LICENSE).
+This project is distributed under the [MIT License](LICENSE).
